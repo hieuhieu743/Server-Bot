@@ -2,7 +2,7 @@ require('dotenv').config();
 const mc = require('mineflayer');
 
 const client = mc.createBot({
-    host: process.env.HOST,
+    host: `${process.env.HOST}:${process.env.PORT}`,
     port: process.env.PORT,
     username: process.env.NAME,
     password: process.env.PASS,
