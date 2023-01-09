@@ -8,6 +8,8 @@ const client = mc.createBot({
     password: process.env.PASS,
 });
 
+const mcData = require('minecraft-data')(client.version);
+
 client.on('login', () => {
     console.log('Connected');
 });
